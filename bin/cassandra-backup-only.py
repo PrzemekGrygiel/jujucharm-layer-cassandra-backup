@@ -5,7 +5,7 @@ import os
 import shutil
 import argparse
 
-backup_dir_base = '/root/database_backup/'
+backup_dir_base = '/var/local/cassandra-backup'
 #keyspaces to snapshot
 snapshot_keyspaces = ['config_db_uuid', 'DISCOVERY_SERVER', 'system_auth','to_bgp_keyspace', 'system_traces', 'useragent', 'svc_monitor_keyspace', 'dm_keyspace', 'config_webui' ]
 cass_datadirs = '/var/lib/cassandra/data/'
